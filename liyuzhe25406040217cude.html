@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<头部>
+    <样式>
+       .cube {
+            position: relative;
+            width: 100像素;
+            height: 100像素;
+        }
+       .side {
+            position: absolute;
+            width: 100像素;
+            height: 100像素;
+        }
+       .前 {
+背景：线性渐变（从右下角到右上角，#000，#fff）;
+50像素；
+        }
+       .back {
+背景：线性渐变（从左上角到右下角，#000，#fff）;
+变换：旋转Y轴180度，沿Z轴平移50像素；
+        }
+       .left {
+背景：线性渐变（从右到左，#000，#fff）；
+            变换: rotateY(-90度) translateZ(50px);
+        }
+       .right {
+背景：线性渐变（向左，#000，#fff）;
+变换：绕Y轴旋转90度，沿Z轴平移50px；
+        }
+       .top {
+背景：线性渐变（向下，#000，#fff）;
+            transform: rotateX(-90度) translateZ(50px);
+        }
+       .bottom {
+背景：线性渐变（从上到下，#000，#fff）；
+变换：rotateX(90度) translateZ(50px);
+        }
+    </style>
+</head>
+<body>
+    <div class="cube">
+        <div class="side front"></div>
+        <div class="side back"></div>
+        <div class="side left"></div>
+        <div class=“右侧”></div>
+        <div class=“顶部”></div>
+        <div class=“底部”></div>
+    </div>
+</身体>
+</html>
