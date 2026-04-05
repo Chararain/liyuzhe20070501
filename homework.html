@@ -1,0 +1,11 @@
+function solveQuadratic() {
+    let a = parseFloat(prompt("请输入系数a"));
+    let b = parseFloat(prompt("请输入系数b"));
+    let c = parseFloat(prompt("请输入系数c"));
+    let delta = b * b - 4 * a * c;
+    let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+    let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+    console.log("x1 = " + x1 + ", x2 = " + x2);
+    alert("x1 = " + x1 + ", x2 = " + x2);
+}
+solveQuadratic();
